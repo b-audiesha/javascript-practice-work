@@ -8,15 +8,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
 <body>
-<a class ="btn">Shadow Box</a>
+<a onclick = "pop()" class ="btn">Show Box</a>
 
 <div id="box">
   <span class="ion-checkmark-round"></span>
   <h1>Good Job !</h1>
 
-  <a class="close">Close</a>
+  <a onclick ="pop()" class="close">Close</a>
 </div>
 
-<script src="js/functions-with-popup.js"></script>
+<script type ='text/javascript'>
+  var c = 0;
+  function pop() {
+    if (c == 0) {
+      document.getElementById("box").style.display = "block";
+      c = 1;
+    } else {
+      document.getElementById("box").style.display = "none";
+      c = 0;
+    }
+  }
+
+</script>
 </body>
 </html>
