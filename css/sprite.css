@@ -12,3 +12,23 @@
   overflow: hidden;
 }
 .container .slide
+{
+  postion:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container .slide.slide1
+{
+  background: url(sprite.jpg);
+  background-attachment: fixed;
+  background: center;
+}
+.container .slide.slide2
+{
+  /*background: url(jetbrains://idea/navigate/reference?project=js-freetime-projects&path=images/base_featurecan.jpg);*/
+  background-attachment: fixed;
+  background: center;
+  background: left;
+}
