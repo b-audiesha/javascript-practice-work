@@ -80,3 +80,6 @@ The farmer has counted his animals and he gives you a subtotal for each species.
 function animals(chickens, cows, pigs) {
   return (chickens * 2) + (cows * 4) +(pigs * 4)
 }
+function animals(chickens, cows, pigs) {
+  return (chickens * 2) + (cows * 4) +(pigs * 4)
+}
