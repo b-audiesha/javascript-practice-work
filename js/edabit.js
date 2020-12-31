@@ -77,3 +77,26 @@ The farmer has counted his animals and he gives you a subtotal for each species.
 function animals(chickens, cows, pigs) {
   return (chickens * 2) + (cows * 4) +(pigs * 4)
 }
+
+/*Emmy has written a function that returns a greeting to users. However, she's in love with Mubashir, and would like to greet him slightly differently. She added a special case in her function, but she made a mistake.
+
+Can you help her?*/
+
+function greeting(name){
+  if(name == "Mubashir") {
+    return "Hello, my Love!";
+  }
+  return "Hello, " + name + "!";
+
+}
+/*There is a single operator in JavaScript, capable of providing the remainder of a division operation. Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.*/
+const remainder = (x, y) => x % y
+/*or*/
+function remainder(x, y) {
+  return x % y
+}
+/*
+Create a function that takes length and width and finds the perimeter of a rectangle.*/
+function findPerimeter(length, width) {
+  return (2 *length) + (2 * width);
+}
