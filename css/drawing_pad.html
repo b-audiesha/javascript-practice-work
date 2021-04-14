@@ -190,11 +190,6 @@
     ctx.stroke()
   }
 
-  /* * * * * * * * * * * * * * * *
-  * Canvas pointer events
-  */
-
-  // choose the best event type
   const [down, up, move, out] = (
     'onpointermove' in document.body ?
       ['pointerdown', 'pointerup', 'pointermove', 'pointerout']  :
@@ -203,7 +198,6 @@
         // else
         ['mousedown', 'mouseup', 'mousemove', 'mouseout']
   )
-  //alert([down, up, move, out])
 
   canvas.addEventListener(down, drawMode_ACTIVATE)
 
